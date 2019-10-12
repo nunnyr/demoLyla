@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/Demolisty24/LylasHack#readme",
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "@pusher/chatkit-server": "^1.0.4",
+    "express": "^4.16.4",
+    "uuid": "^3.3.2"
   }
 }
