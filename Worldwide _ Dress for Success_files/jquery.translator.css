@@ -1,0 +1,337 @@
+/**
+ * Translator Revolution DropDown WP Plugin
+ * http://goo.gl/xrxDo
+ *
+ * LICENSE
+ *
+ * You need to buy a license if you want use this script.
+ * https://codecanyon.net/legal/market
+ *
+ * @package    Translator Revolution DropDown WP Plugin
+ * @copyright  Copyright (c) 2017, SurStudio, www.surstudio.net
+ * @license    https://codecanyon.net/licenses/terms/regular
+ * @version    2.2
+ * @date       2018-04-18
+ */
+
+.translator-dropdown-container {
+	text-align: center !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	background: none !important;
+	height: 28px !important;
+	z-index: 999999 !important;
+}
+	
+.translator-dropdown-container label {
+	display: block;
+	float: left !important;
+	margin: 5px 5px 0 0 !important;
+	color: #ccc !important;
+}
+
+.translator-dropdown-container p {
+	margin: 0 !important;
+	border: 0 !important;
+	font-weight: normal !important;
+}
+
+.translator-dropdown-container a {
+	text-decoration: none !important;
+	font-weight: normal !important;
+}
+
+.translator-dropdown-sub-container {
+	height: 28px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+	border: none !important;
+	z-index: 999999 !important;
+}
+
+.translator-dropdown-floating-left,
+.translator-dropdown-floating-left .translator-dropdown-sub-container {
+	float: left !important;
+}
+
+.translator-dropdown-floating-right,
+.translator-dropdown-floating-right .translator-dropdown-sub-container {
+	float: right !important;
+}
+
+.translator-dropdown-body {
+	position: relative !important;
+	float: left !important;
+	height: 21px !important;
+	padding: 5px 3px 0 !important;
+	background: #444 !important;
+	border: 1px solid #444 !important;
+	border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	-webkit-border-radius: 5px !important;
+	margin: 0 !important;
+	z-index: 999999 !important;
+	-moz-box-sizing: content-box !important;
+	box-sizing: content-box !important;
+}
+
+.translator-dropdown-body p {
+	color: #ccc;
+	position: relative !important;
+	font-weight: normal !important;
+}
+
+.translator-dropdown-current-language-arrow {
+	display: block !important;
+	width: 0 !important;
+	height: 0 !important;
+	border: 6px solid !important;
+	position: absolute !important;
+	top: 10px !important;
+	right: 5px !important;
+	border-color: #ccc transparent transparent !important;
+	background: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.translator-dropdown-scroll-enabled {
+	
+}
+
+.translator-dropdown-current-language-flag {
+	position: absolute !important;
+	right: 0 !important;
+	top: 2px !important;
+}
+
+.translator-dropdown-languages-list-scroll {
+	margin: 3px 0 0 0 !important;
+	padding: 0 !important;
+	background: none !important;
+	border: none !important;
+	display: none;
+}
+
+.translator-dropdown-languages-list-scroll-bar {
+	background: #444 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	z-index: 9999999 !important;
+	left: auto !important;
+}
+
+.translator-dropdown-languages-list-scroll-bar-rail {
+	margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+	border: none !important;
+}
+
+.translator-dropdown-languages-list-opened .translator-dropdown-languages-list-scroll {
+	display: block;
+	z-index: 999999 !important;
+}
+
+.translator-dropdown-languages-list {
+	margin: 3px 0 0 0 !important;
+	padding: 0 !important;
+	background: none !important;
+	border: none !important;
+	display: none;
+}
+
+.translator-dropdown-hover .translator-dropdown-languages-list p:hover {
+	background-color: #ffffdf !important;
+}
+
+.translator-dropdown-languages-list p a {
+	background: none !important;
+	float: none !important;
+}
+
+.translator-dropdown-hover .translator-dropdown-languages-list p:hover a,
+.translator-dropdown-hover .translator-dropdown-languages-list p:hover a span {
+	color: #fb8a00 !important;
+}
+
+.translator-dropdown-scroll-enabled .translator-dropdown-languages-list {
+	overflow: hidden;
+	margin-top: 0 !important;
+}
+
+.translator-dropdown-hover.translator-dropdown-scroll-enabled .translator-dropdown-languages-list:hover {
+    overflow-y: scroll;
+}
+
+.translator-dropdown-languages-list p {
+	cursor: pointer !important;
+	border-top: 1px solid #ebebe9 !important;
+	padding: 3px 0 !important;
+	background: none !important;
+}
+
+.translator-dropdown-languages-list-opened .translator-dropdown-body {
+	height: auto !important;
+	background: #fff !important;
+	border: 1px solid #ccc !important;
+	box-shadow: 0 0 4px #bbb !important;
+	-moz-box-shadow: 0 0 4px #bbb !important;
+	-webkit-box-shadow: 0 0 4px #bbb !important;
+}
+
+.translator-dropdown-languages-list-opened .translator-dropdown-languages-list {
+	display: block;
+}
+
+.translator-dropdown-sub-container table {
+	text-align: center !important;
+	margin: 0 auto !important;
+	height: 20px !important;
+	border-collapse: separate !important;
+	border: none !important;
+	background: #444 !important;
+}
+
+.translator-dropdown-sub-container table tr {
+	background: none !important;
+	border: none !important;
+}
+
+.translator-dropdown-sub-container table td {
+	vertical-align: middle !important;
+	background: none !important;
+	border: none !important;
+	height: 20px !important;
+	line-height: 20px !important;
+	width: auto !important;
+	padding: 0 !important;
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+.translator-dropdown-current-language {
+	padding: 0 25px 0 3px !important;
+	color: #fff !important;
+	background: none !important;
+	border-collapse: separate !important;
+}
+
+.translator-dropdown-current-language span {
+	color: #fff !important;
+}
+
+.translator-dropdown-languages-list-opened .translator-dropdown-current-language,
+.translator-dropdown-languages-list-opened .translator-dropdown-current-language span {
+	color: #444 !important;
+}
+
+.translator-dropdown-sub-container a {
+	padding: 0 3px !important;
+	color: #444 !important;
+	width: 100%;
+	text-align: left;
+}
+
+.translator-dropdown-sub-container a span {
+	color: #444 !important;
+	border: none !important;
+	font-family: Verdana !important;
+	font-size: 10px !important;
+	text-decoration: none !important;
+	white-space: nowrap !important;
+	line-height: 16px !important;
+	font-weight: normal !important;
+	text-decoration: none !important;
+	text-transform: none !important;
+	text-shadow: none! important;
+}
+
+.translator-dropdown-sub-container p.translator-dropdown-completed {
+	background-color: #ffffdf !important;
+}
+
+.translator-dropdown-sub-container p.translator-dropdown-completed a span {
+	color: #fb8a00 !important;
+}
+
+.translator-dropdown-current-language,
+.translator-dropdown-sub-container a {
+	font-weight: normal !important;
+	text-decoration: none !important;
+	height: 16px !important;
+	display: table !important;
+	border: none !important;
+	font-family: Verdana !important;
+	font-size: 10px !important;
+	white-space: nowrap !important;
+	vertical-align: middle !important;
+	line-height: 16px !important;
+	margin: 0 !important;
+	text-align: left !important;
+}
+
+.translator-dropdown-hover .translator-dropdown-sub-container a:hover {
+	text-decoration: none !important;
+}
+
+.translator-dropdown-current-language span,
+.translator-dropdown-sub-container a span {
+	padding: 0;
+	line-height: 16px !important;
+}
+
+.translator-dropdown-flags-and-names .translator-dropdown-current-language span,
+.translator-dropdown-flags-and-short-names .translator-dropdown-current-language span,
+.translator-dropdown-flags-and-names .translator-dropdown-sub-container a span,
+.translator-dropdown-flags-and-short-names .translator-dropdown-sub-container a span {
+	padding-left: 3px !important;
+	margin: 0 !important;
+	border: none !important;
+	font-family: Verdana !important;
+	font-size: 10px !important;
+	text-decoration: none !important;
+	white-space: nowrap !important;
+	line-height: 16px !important;
+	font-weight: normal !important;
+	background: none !important;
+	text-transform: none !important;
+	text-shadow: none! important;
+	font-style: normal !important;
+	text-transform: none !important;
+}
+
+.translator-dropdown-current-language img,
+.translator-dropdown-sub-container a img {
+	border: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	vertical-align: top !important;
+	width: 22px !important;
+	max-width: 22px !important;
+	height: 16px !important;
+	max-height: 16px !important;
+	display: inline !important;
+	background: none !important;
+	border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	-webkit-border-radius: 3px !important;
+}
+
+.translator-dropdown-low-res .translator-dropdown-hide-name {
+	display: inline-block !important;
+}
+
+.translator-dropdown-loading {
+	padding-left: 16px !important;
+	background-image: url(../images/loading.gif) !important;
+	background-repeat: no-repeat !important;
+	background-position: center left !important;
+}
+
+.translator-dropdown-hidden {
+	display: none;
+}

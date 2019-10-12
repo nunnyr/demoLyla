@@ -1,0 +1,145 @@
+/*
+  Language selector in header. Shown on desktop version or width >= 768px
+ */
+
+.header-account-greeting {
+  margin-right: 5px;
+}
+
+.header__donate-button-heart--spacing {
+  margin-right: 5px;
+}
+
+.header__button {
+  display: inline-block;
+  margin: 0px 16px;
+}
+
+#header-language-selector.header__button {
+  margin: 0px;
+}
+
+.header__button-row {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.header__button-row .translator-dropdown-container {
+  height: auto !important;
+  max-height: 37px;
+}
+
+.header__button-row .translator-dropdown-sub-container {
+  height: auto !important;
+}
+
+.header__button-row .translator-dropdown-sub-container p.translator-dropdown-completed {
+  background-color: #e4e0d7 !important;
+}
+
+.header__button-row .translator-dropdown-body {
+  height: auto !important;
+  background-color: #b42c33 !important;
+  border: none !important;
+  border-radius: 3px !important;
+  padding: 10px 20px !important;
+}
+
+.header__button-row .translator-dropdown-body .translator-dropdown-current-language span {
+  font-size: 15px !important;
+  font-family: "Gotham A", "Gotham B", "Georgia", Cambria, Times New Roman, Times, serif !important;
+  text-transform: uppercase !important;
+  margin-left: 8px !important;
+}
+
+.header__button-row .translator-dropdown-current-language-arrow {
+  top: 15px !important;
+  right: 15px !important;
+}
+
+.header__button-row .translator-dropdown-flags-and-names .translator-dropdown-sub-container a span {
+  font-family: "Gotham A", "Gotham B", "Georgia", Cambria, Times New Roman, Times, serif !important;
+  text-transform: uppercase !important;
+  margin-left: 5px !important;
+  font-size: 12px !important;
+  color: #0055a2 !important;
+}
+
+.header__button-row .translator-dropdown-languages-list p {
+  padding: 10px 5px !important;
+  border-top-width: 1px !important;
+}
+
+.header__button-row .translator-dropdown-hover .translator-dropdown-languages-list p:hover {
+  background-color: #e4e0d7 !important;
+}
+
+.header__button-row .translator-dropdown-hover .translator-dropdown-languages-list p:hover a,
+.header__button-row .translator-dropdown-hover .translator-dropdown-languages-list p:hover a span {
+  color: #0055a2 !important;
+}
+
+/*
+ * Language selector in main menu. Shown on mobile or widths < 768px.
+ */
+
+#menu-main-menu .translator-dropdown-current-language-arrow {
+  display: none !important;
+}
+
+#menu-main-menu .translator-dropdown-container {
+  float: none !important;
+  height: auto !important;
+}
+
+#menu-main-menu .translator-dropdown-sub-container {
+  height: auto !important;
+  float: none !important;
+}
+
+#menu-main-menu .translator-dropdown-body {
+  background-color: inherit !important;
+  border: none !important;
+  padding: 20px 15px !important;
+  float: none !important;
+}
+
+#menu-main-menu .translator-dropdown-body {
+  background-color: inherit !important;
+  border: none !important;
+  padding: 20px 15px !important;
+  float: none !important;
+}
+
+#menu-main-menu .translator-dropdown-body .translator-dropdown-current-language span {
+  font-size: 12px !important;
+  font-family: "Gotham A", "Gotham B", "Georgia", Cambria, Times New Roman, Times, serif !important;
+  text-transform: uppercase !important;
+  margin-left: 8px !important;
+}
+
+#menu-main-menu .translator-dropdown-languages-list-opened .translator-dropdown-body {
+  background-image: url(../images/gray-bkgnd.jpg) !important;
+}
+
+#menu-main-menu .translator-dropdown-languages-list {
+  padding: 10px 0px 0px 0px !important;
+}
+
+#menu-main-menu .translator-dropdown-languages-list p {
+  border-top-color: black !important;
+  padding: 10px 0px !important;
+}
+
+#menu-main-menu .translator-dropdown-flags-and-names .translator-dropdown-sub-container a span {
+  font-family: "Gotham A", "Gotham B", "Georgia", Cambria, Times New Roman, Times, serif !important;
+  text-transform: uppercase !important;
+  margin-left: 8px !important;
+  font-size: 12px !important;
+  color: #0055a2 !important;
+}
+
+#mobile-menu__translator-item {
+  z-index: 0;
+}
